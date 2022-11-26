@@ -1,0 +1,182 @@
+@font-face {
+    font-family: Netflix;
+    src: url('/assets/fonts/NetflixSans_W_Rg.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: Netflix;
+    src: url('/assets/fonts/NetflixSans_W_Md.woff2');
+    font-weight: 600;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: Netflix;
+    font-weight: 400;
+    outline: none;
+}
+.header{
+    
+    z-index: 99;
+    padding: 20px 56px;
+    display: flex;
+    height: 84px;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header ul{
+   display: flex;
+}
+.header select{
+    height: 36px;
+    background-color: transparent;
+    color: white;
+    border-radius: 2px;
+    padding: 6px;
+    margin-right: 20px;
+
+}
+.header button{
+    height: 36px;
+    background-color: red;
+    color: white;
+    width: 90px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background-size: cover;
+    background-image: linear-gradient(0deg,transparent 0%,rgba(0,0,0,.7)),radial-gradient(70% 70%,transparent 0,rgba(0,0,0,.7) 100%), url('https://assets.nflxext.com/ffe/siteui/vlv3/79fe83d4-7ef6-4181-9439-46db72599559/51ec22c3-9b23-468a-8402-5683471dde31/AZ-en-20221017-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    min-height: 105vh;
+    border-bottom: 10px solid #222222;
+
+}
+.home h1{
+    font-weight: 600;
+   font-size: 3.125rem;
+   max-width: 500px;
+   text-align: center;
+}
+.home h2{
+     margin: 1rem;
+}
+.home input{
+    
+    height: 60px;
+    width: 450px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+}
+.home input::placeholder{
+    color: #8c8c8c;
+}
+.home .email-content{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+   
+}
+.home button{
+    height: 60px;
+    width: 212px;
+     background-color: red;
+     border: none;
+     border-bottom-right-radius: 2px;
+     border-top-right-radius: 2px;
+     font-size: 26px;
+}
+
+.our-story{
+    padding-left: 80px;
+    border-bottom: solid 10px #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    background-color: #000;
+}
+.our-story h1{
+    font-weight: 600;
+    font-size: 3.125rem;
+}
+.our-story h2{
+    max-width: 530px;
+}
+.our-story img{
+    position: relative;
+    padding-left: 40px;
+    width: 540px;
+    z-index: 99999;
+}
+.our-story video{
+    position: absolute;
+    padding-top: 80px;
+    padding-left: 110px;
+    width: 470px;
+
+}
+.kids-section , .download-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    min-height: 90vh;
+    border-bottom: 10px solid #222222;
+}
+.kids-section img{
+    width: 500px;
+}
+.kids-section h1 , .download-section h1{
+    padding-bottom: 20px;
+    font-size: 3.125rem;
+    font-weight: 600;
+}
+.kids-section .kids-text , .download-text{
+    max-width: 547px;
+}
+.download-image img{
+    width: 500px;
+}
+.download-section .box{
+    z-index: 99999 !important;
+    position: absolute;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 331px;
+    height: 96px;
+    border: 3px solid #404040;
+    border-radius: 12px;
+}
+.download-section .box img{
+    width: 55px;
+}
+.download-section .box .box-text{
+    padding-right: 50px !important;
+}
+.download-section .box .box-text p{
+    font-weight: 600;
+}
+.download-section .box .box-text span{
+    color: #0071EB;
+}
+.download-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
